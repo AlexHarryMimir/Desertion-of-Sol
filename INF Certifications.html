@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile</title>
+    <style>
+      :root {
+        --base-bg-color: #001012;
+        --main-text-color: #e0ffff;
+        --second-text-color: #1da25b;
+        --summery-text-color: #f0f6c2;
+        --button_color: #007790;
+        --graphic_2: #006045;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .static_background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -2;
+        display: block;
+      }
+      .static_background_top {
+        display: block;
+        position: fixed;
+        top: 0%;
+        height: 70%;
+        width: 100%;
+        background-color: var(--base-bg-color);
+      }
+      .static_background_bottom {
+        position: fixed;
+        top: 70%;
+        display: block;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(var(--base-bg-color), #002020);
+      }
+      .dots {
+        background-size: 8vh 8vh;
+        background-image: radial-gradient(#205050 0.3vh, transparent 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+      h1 {
+        color: #0077b5;
+        margin-bottom: 10px;
+      }
+      .center_block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .top_bar {
+        width: auto;
+        background: linear-gradient(var(--graphic_2), #002020);
+        height: 30px;
+        border-bottom-style: double;
+        border-width: 10px;
+        border-color: var(--graphic_2);
+        display: flex;
+      }
+    </style>
+  </head>
+  <div class="static_background">
+    <div class="static_background_top"></div>
+    <div class="static_background_bottom"></div>
+  </div>
+  <div class="dots"></div>
+  <body>
+    <div class="top_bar">
+      <iframe src="navbar.html" frameborder="0"></iframe>
+    </div>
+    <div class="center_block">stuff here</div>
+  </body>
+</html>

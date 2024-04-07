@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .navbtn {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        width: max-content;
+        color: white;
+        background-image: radial-gradient(#001012, #005f6b);
+        border-radius: 10px;
+        border: 1px solid white;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .break {
+        width: 20px;
+      }
+      body {
+        display: flex;
+        justify-content: flex-start;
+        position: fixed;
+      }
+      li {
+        cursor: pointer;
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbtn"><li class="nav1">Blueprints</li></div>
+    <div></div>
+    <div class="navbtn"><li class="nav2">Profile</li></div>
+  </body>
+  <script>
+    document
+      .getElementsByClassName("nav1")[0]
+      .addEventListener("click", function () {
+        top.window.location = "INF Certifications.html";
+      });
+    document
+      .getElementsByClassName("nav2")[0]
+      .addEventListener("click", function () {
+        top.window.location = "Profile.html";
+      });
+  </script>
+</html>

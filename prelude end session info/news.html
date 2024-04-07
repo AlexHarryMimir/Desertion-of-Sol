@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>News Desertion of Sol</title>
+    <style>
+      :root {
+        --base-bg-color: #001012;
+        --main-text-color: #e0ffff;
+        --second-text-color: #1da25b;
+        --summery-text-color: #f0f6c2;
+        --button_color: #007790;
+        --artarticle_background1: #002e32;
+        --artarticle_background2: #001e1b;
+        --graphic_2: #006045;
+        --graphic_3: #02a89a;
+      }
+      body {
+        overflow: clip;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        
+      }
+      .static_background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -2;
+        display: block;
+      }
+      .static_background_top {
+        display: block;
+        position: fixed;
+        top: 0%;
+        height: 70%;
+        width: 100%;
+        background-color: var(--base-bg-color);
+      }
+      .static_background_bottom {
+        position: fixed;
+        top: 70%;
+        display: block;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(var(--base-bg-color), #002020);
+      }
+      .top_bar {
+        width: auto;
+        background: linear-gradient(var(--graphic_2), #002020);
+        height: 30px;
+        border-bottom-style: double;
+        border-width: 10px;
+        border-color: var(--graphic_2);
+        display: flex;
+      }
+      .dots {
+        background-size: 8vh 8vh;
+        background-image: radial-gradient(#205050 0.3vh, transparent 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+      h1 {
+        color: #0077b5;
+        margin-bottom: 10px;
+      }
+      
+      .center_block {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+        border-left: solid var(--graphic_3) 5px;
+        font-family: "Courier New", Courier, monospace;
+        padding-left: 100px;
+        padding-right: 100px;
+        height: 90vh;
+      }
+      .center_block::-webkit-scrollbar{
+        width:8px;
+      }
+      .center_block::-webkit-scrollbar-track{
+        background: var(--graphic_3);
+      }
+      .center_block::-webkit-scrollbar-thumb{
+        background-color: var(--artarticle_background1);
+        border-radius: 4px;
+      }
+      
+      .article_block {
+        border: double var(--graphic_3) 8px;
+        background-image: linear-gradient(var(--base-bg-color), #002020);
+        border-radius: 40px;
+        padding: 40px;
+      }
+      .article_decal {
+        display: block;
+        background: var(--graphic_3);
+        height: 50px;
+        width: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .article_title {
+        color: white;
+        font-weight: bold;
+        display: flex;
+        font-size: 30pt;
+        user-select: none;
+      }
+      .article_text {
+        
+        display: none;
+        color: var(--main-text-color);
+        margin: 0;
+        border-top: solid var(--graphic_3) 4px;
+        padding-top: 10px;
+      }
+      .subtitle{
+        color: white;
+        font-size: large;
+        text-decoration: underline;
+      }
+      a {
+        cursor: pointer;
+      }
+      .right_block{
+        flex-grow: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
+        height: 50px;
+        background-color: var(--graphic_3);
+      }
+    </style>
+  </head>
+  <div class="static_background">
+    <div class="static_background_top"></div>
+    <div class="static_background_bottom"></div>
+  </div>
+  <div class="dots"></div>
+  <body>
+    <div class="center_block">
+        <div style="height:10px"></div>
+        <div class="article_block">
+            <a id="Asia_Tragedy_dropdown" class="article_title">
+                <div class="article_decal">
+                </div>
+                <div style="width: 20px;"></div>
+                <div>
+                  Tragedy Strikes
+                </div>
+                <div class="right_block"></div>
+            </a>
+            <div class="subtitle">
+                publisher: Imperial Press, 10/1/2123
+            </div>
+            <div style="height: 10px;"></div>
+            <div id="Asia_Tragedy" class="article_text">
+              <div style="color: rgb(179, 179, 179);">
+                <p>
+                location:<br>
+                Imperial Palace of The People’s Republic of Asia
+                </p>
+              </div>
+              <div class="subtitle">The Assassination of the Emperor</div>
+              The tragedy unfolded Sunday morning, sometime between 11:00 am when the emperor reportedly entered his prestigious quarters and 11:35 when the killers appeared at a nearby precinct and confessed to the heartless murder. The assassins were a party of 3: Xrysteghn Marleigh, Brent Mercer, and Jim Hutchins. <br><br>
+              <div class="subtitle">Evidence</div>
+              Upon turning themselves in, the assessens had very little possessions since most of their belongings were confiscated weeks ago during their arraignment trial. The team had been out on bail under charges of conspiracy. The judge who set their bail is now under severe scrutiny due to the consequences ensuant to their release. Upon closer inspection of their items, evidence shows the party had been holding large sums of a crypto currency known as Brent Koin. Also in their possession were classified floor plans of the imperial vacation location.<br>
+              An additional data disk was revoked from their possession at the arrest on sunday. This disk held a single file with the address of a high security PO box in the name of Xrysteghn Marleigh. Further investigation revealed highly detailed plans of the security around the palace.<br>
+              The most damning piece of evidence of all is that the murder weapons were found at the scene of the crime. Three pistols with fingerprints belonging to the suspects were found in the chambers of the emperor. These weapons had clearly been taken apart and smuggled into the palace by the criminals since hairs belonging to the culprits were found in the assembly joints of the weapons.<br>
+              </p>
+              <img src="./compressed_images/Jim Hutchins Social Media.jpg" style=" border-radius: 30px; height: auto; width: 400px; float: right;">
+              <p>
+                Evidence points to the conclusion that upon being arrested originally the assassins were forced to move up their time scale and switch from planning their attack at the vacation home to the palace. Furthermore it is clear these criminals were proud of their action, taking immediate credit for the assassination, and sharing about it on the nets.<br>
+              </p>
+              <img src="./compressed_images/Brent Mercer Social Media.jpg" style="border-radius: 30px; height: auto; width: 400px; float: left; padding-right: 10px;">
+              <p>
+              <div class="subtitle">Motivation</div>
+              Not a lot is known about the temperament of the assassins. They are assumed to be foreigners nationals from the UK with personal held hatred of the Republic of Asia. Just days before the assassins struck, they were posting on social media about their abhorrence to the culture cultivated by the leadership of the Emperor. <br>
+              </p>
+              <p>
+                Jim Hutchins is originally American with a strong hatred for the communist past of the Asian Empire. His social media continuously posts strongly worded language preaching extreme ideas of nationalism and facism.<br>
+                As for Xrysteghn Marleigh and Brent Mercer, their strong relationship over Brent Koin founded by Brent Mercer himself further translates to a life of crime and hatred. Last month a video was captured showing Xrysteghn and Brent throwing a factory worker, Dale Bello, to his death. A struggle can be seen where the man clearly clings to the train car as Xrysteghn and Brent force him out where he plummeted to his early death leaving Dale’s newly pregnant fiance to be a single mother.<br><br>
+              </p>
+
+            </div>
+        </div>
+        <div style="height:10px"></div>
+        <div class="article_block">
+            <a id="brent_koin_rise_dropdown" class="article_title">
+                <div class="article_decal">
+                </div>
+                <div style="width: 20px;"></div>
+                <div>
+                    Brent Koin Rises
+                </div>
+                <div class="right_block"></div>
+            </a>
+            <div class="subtitle">
+                author: Wall Streen Journal, 10/1/2123
+            </div>
+            <div style="height: 10px;"></div>
+            <div id="brent_koin_rise" class="article_text">
+              <img src="./compressed_images/Brent Koin Tragectory.jpg" style="border: 1px solid white; border-radius: 30px; height: auto; width: 400px; float: right;">
+              <p>
+              An unprecedented upwind shoots Brent Koin to the moon. As news of the Emperor's death in the People’s Republic of Asia spreads, support for the alleged assassins is being pledged by political groups around the globe. Many extremist groups in the west looking for ways to contribute to the case for Brent Mercer and his gang have decided to give money by buying up Brent’s genius invention of Brent Koin. Even harsh critics are labeling the crypto currency as a hyper intelligent move from the son of the head of the Mercer Corporation as a way to capture the popularity of the elimination of the Emperor.<br><br>
+              </p>
+              <p>
+              The question still remains as to what will happen with Brent’s finances seeing as his execution is likely inevitable.
+              </p>
+            </div>
+        </div>
+        <div style="height:10px"></div>
+        <div class="article_block">
+            <a id="Icurus_expansion_dropdown" class="article_title">
+                <div class="article_decal">
+                </div>
+                <div style="width: 20px;"></div>
+                <div>
+                    Icarus Expansion Launch
+                </div>
+                <div class="right_block"></div>
+            </a>
+            <div class="subtitle">
+                author: Executive Press of Icarus, 10/6/2123
+            </div>
+            <div style="height: 10px;"></div>
+            <div id="Icurus_expansion" class="article_text">
+              <div style="color: rgb(179, 179, 179);">
+                <p>
+                location:<br>
+                Icarus Luna Headquarters
+                </p>
+              </div>
+              <p>
+                <img src="./compressed_images/Asimov ship.jpg" style="border: 1px solid white; border-radius: 30px; height: auto; width: 400px; float: right;">
+                A momentous landmark is upon humanity. Icarus is proud to announce a mission that has been its primary focus for over two decades. Humans shall access alpha centauri. There are three phases of the interplanetary colonization mission dubbed by their target systems.<br><br>
+                The Centauri Mission was planned to launch first. It required the least technological advancements from the original planning of these three missions. Construction finished in February and inspections passed in August. The Centauri Mission intends to launch seven generational star ships equipped with the best life support technology. Each ship in the fleet has a large spinning drum to provide earth-like gravity within several rings of habitable space. Each ship is equipped to handle a floating population between 80 and 200 people.<br><br>
+                Each ship will be launched in successive years starting with the first mission on October 12th. Candidates for the inhabitants of the Asimov ship have been selected based on genetic diversity, family history, and cognitive state.
+              </p>
+            </div>
+        </div>
+        <div style="height: 10px"></div>
+        
+    </div>
+  </body>
+  <script>
+    const history_block = document.getElementById("brent_koin_rise");
+    document.getElementById("brent_koin_rise_dropdown").addEventListener("click", function(){
+        if(history_block.style.display == "block"){
+            history_block.style.display = "none";
+        } else {
+            history_block.style.display = "block";
+        }
+    })
+    const Asia_Tragedy = document.getElementById("Asia_Tragedy");
+    document.getElementById("Asia_Tragedy_dropdown").addEventListener("click", function(){
+        if(Asia_Tragedy.style.display == "block"){
+            Asia_Tragedy.style.display = "none";
+        } else {
+            Asia_Tragedy.style.display = "block";
+        }
+    })
+    const Icurus_expansion_dropdown = document.getElementById("Icurus_expansion");
+    document.getElementById("Icurus_expansion_dropdown").addEventListener("click", function(){
+        if(Icurus_expansion_dropdown.style.display == "block"){
+          Icurus_expansion_dropdown.style.display = "none";
+        } else {
+          Icurus_expansion_dropdown.style.display = "block";
+        }
+    })
+  </script>
+</html>
