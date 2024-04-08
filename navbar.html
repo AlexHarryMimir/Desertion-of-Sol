@@ -6,16 +6,14 @@
         padding-left: 10%;
         padding-right: 10%;
         text-align: center;
-        width: max-content;
+        width: fit-content;
         color: white;
         background-image: radial-gradient(#001012, #005f6b);
         border-radius: 10px;
         border: 1px solid white;
         font-family: "Courier New", Courier, monospace;
       }
-      .break {
-        width: 20px;
-      }
+
       body {
         display: flex;
         justify-content: flex-start;
@@ -24,24 +22,40 @@
       li {
         cursor: pointer;
         list-style-type: none;
+        white-space: nowrap;
       }
     </style>
   </head>
   <body>
-    <div class="navbtn"><li class="nav1">Blueprints</li></div>
-    <div></div>
-    <div class="navbtn"><li class="nav2">Profile</li></div>
+    <div class="navbtn"><li class="nav1">Player Profiles</li></div>
+    <div class="navbtn"><li class="nav2">Contacts</li></div>
+    <div class="navbtn"><li class="nav3">Crafting</li></div>
+    <div class="navbtn"><li class="nav4">News</li></div>
   </body>
   <script>
+    //Player profiles
     document
       .getElementsByClassName("nav1")[0]
       .addEventListener("click", function () {
-        top.window.location = "INF Certifications.html";
+        top.window.location = "./players/player_list.html";
       });
+    //contacts
     document
       .getElementsByClassName("nav2")[0]
       .addEventListener("click", function () {
-        top.window.location = "Profile.html";
+        top.window.location = "./contacts/contact_list.html";
+      });
+    //crafting
+    document
+      .getElementsByClassName("nav3")[0]
+      .addEventListener("click", function () {
+        top.window.location = "./crafting/crafting_hub.html";
+      });
+    //news
+    document
+      .getElementsByClassName("nav4")[0]
+      .addEventListener("click", function () {
+        top.window.location = "./news/news.html";
       });
   </script>
 </html>

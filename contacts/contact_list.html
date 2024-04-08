@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News Desertion of Sol</title>
+    <style>
+      :root {
+        --base-bg-color: #001012;
+        --main-text-color: #e0ffff;
+        --second-text-color: #1da25b;
+        --summery-text-color: #f0f6c2;
+        --button_color: #007790;
+        --artarticle_background1: #002e32;
+        --artarticle_background2: #001e1b;
+        --graphic_2: #006045;
+        --graphic_3: #02a89a;
+      }
+      body {
+        overflow: clip;
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .static_background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -2;
+        display: block;
+      }
+      .static_background_top {
+        display: block;
+        position: fixed;
+        top: 0%;
+        height: 70%;
+        width: 100%;
+        background-color: var(--base-bg-color);
+      }
+      .static_background_bottom {
+        position: fixed;
+        top: 70%;
+        display: block;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(var(--base-bg-color), #002020);
+      }
+      .top_bar {
+        width: auto;
+        background: linear-gradient(var(--graphic_2), #002020);
+        height: 30px;
+        border-bottom-style: double;
+        border-width: 10px;
+        border-color: var(--graphic_2);
+        display: flex;
+      }
+      .dots {
+        background-size: 8vh 8vh;
+        background-image: radial-gradient(#205050 0.3vh, transparent 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+      h1 {
+        color: #0077b5;
+        margin-bottom: 10px;
+      }
+
+      .center_block {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+        border-left: solid var(--graphic_3) 5px;
+        font-family: "Courier New", Courier, monospace;
+        padding-left: 100px;
+        padding-right: 100px;
+        height: 90vh;
+      }
+      .center_block::-webkit-scrollbar {
+        width: 8px;
+      }
+      .center_block::-webkit-scrollbar-track {
+        background: var(--graphic_3);
+      }
+      .center_block::-webkit-scrollbar-thumb {
+        background-color: var(--artarticle_background1);
+        border-radius: 4px;
+      }
+
+      .article_block {
+        border: double var(--graphic_3) 8px;
+        background-image: linear-gradient(var(--base-bg-color), #002020);
+        border-radius: 40px;
+        padding: 40px;
+      }
+      .article_decal {
+        display: block;
+        background: var(--graphic_3);
+        height: 50px;
+        width: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .article_title {
+        color: white;
+        font-weight: bold;
+        display: flex;
+        font-size: 30pt;
+        user-select: none;
+      }
+      .subtitle {
+        color: white;
+        font-size: large;
+        text-decoration: underline;
+      }
+      a {
+        cursor: pointer;
+      }
+      .profile_iframe {
+        width: 100%;
+        height: 650px;
+        border: double var(--graphic_3);
+        border-radius: 20px;
+      }
+      .right_block {
+        flex-grow: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
+        height: 50px;
+        background-color: var(--graphic_3);
+      }
+    </style>
+  </head>
+  <div class="static_background">
+    <div class="static_background_top"></div>
+    <div class="static_background_bottom"></div>
+  </div>
+  <div class="dots"></div>
+  <body>
+    <div class="top_bar">
+      <iframe style="width: 100%" src="../navbar.html" frameborder="0"></iframe>
+    </div>
+    <div class="center_block">
+      <div style="height: 10px"></div>
+      <div class="article_block">
+        <a class="article_title">
+          <div class="article_decal">T</div>
+          <div style="width: 20px"></div>
+          <div class="article_title_text"></div>
+          <div class="right_block"></div>
+        </a>
+        <div class="subtitle">S</div>
+        <div style="height: 10px"></div>
+        <iframe
+          class="profile_iframe"
+          src="./crew/profiles/Hawkeye.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div style="height: 10px"></div>
+    </div>
+  </body>
+  <script>
+    const article_buttons = document.getElementsByClassName("article_block");
+  </script>
+</html>
