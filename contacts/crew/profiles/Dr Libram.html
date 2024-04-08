@@ -12,6 +12,17 @@
         --graphic_2: #006045;
         --graphic_3: #02a89a;
         --graphic_3_tluc: #02a89a10;
+        --scroll_bar_color: #002e32;
+      }
+      html::-webkit-scrollbar {
+        width: 8px;
+      }
+      html::-webkit-scrollbar-track {
+        background: var(--graphic_3);
+      }
+      html::-webkit-scrollbar-thumb {
+        background-color: var(--scroll_bar_color);
+        border-radius: 4px;
       }
       body {
         font-family: Arial, sans-serif;
@@ -175,15 +186,12 @@
   </div>
   <div class="dots"></div>
   <body>
-    <div class="top_bar">
-      <iframe src="../../navbar.html" frameborder="0"></iframe>
-    </div>
     <div class="center_block">
       <h1>Juliette Cabin Crew</h1>
       <div class="profile-details">
         <img
           class="profile-img"
-          src="../profile pictures/Kira Vega codename Wildcard.jpg"
+          src="../profile pictures/Dr Elara Selene codename Libram.png"
           alt="pfp"
         />
         <div>

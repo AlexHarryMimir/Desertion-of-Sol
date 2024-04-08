@@ -121,11 +121,14 @@
         cursor: pointer;
       }
       .profile_iframe {
+        overflow-y: scroll;
         width: 100%;
         height: 650px;
         border: double var(--graphic_3);
         border-radius: 20px;
+        display: none;
       }
+
       .right_block {
         flex-grow: 1;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%);
@@ -147,12 +150,12 @@
       <div style="height: 10px"></div>
       <div class="article_block">
         <a class="article_title">
-          <div class="article_decal">T</div>
+          <div class="article_decal"></div>
           <div style="width: 20px"></div>
-          <div class="article_title_text"></div>
+          <div class="article_title_text">Hawkeye</div>
           <div class="right_block"></div>
         </a>
-        <div class="subtitle">S</div>
+        <div class="subtitle">Asimov Crew</div>
         <div style="height: 10px"></div>
         <iframe
           class="profile_iframe"
@@ -160,10 +163,107 @@
           frameborder="0"
         ></iframe>
       </div>
+      <!--block parse-->
+      <div style="height: 10px"></div>
+      <div class="article_block">
+        <a class="article_title">
+          <div class="article_decal"></div>
+          <div style="width: 20px"></div>
+          <div class="article_title_text">Wildcard</div>
+          <div class="right_block"></div>
+        </a>
+        <div class="subtitle">Asimov Crew</div>
+        <div style="height: 10px"></div>
+        <iframe
+          class="profile_iframe"
+          src="./crew/profiles/Wildcard.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <!--block parse-->
+      <div style="height: 10px"></div>
+      <div class="article_block">
+        <a class="article_title">
+          <div class="article_decal"></div>
+          <div style="width: 20px"></div>
+          <div class="article_title_text">Libram</div>
+          <div class="right_block"></div>
+        </a>
+        <div class="subtitle">Asimov Crew</div>
+        <div style="height: 10px"></div>
+        <iframe
+          class="profile_iframe"
+          src="./crew/profiles/Dr Libram.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <!--block parse-->
+      <div style="height: 10px"></div>
+      <div class="article_block">
+        <a class="article_title">
+          <div class="article_decal"></div>
+          <div style="width: 20px"></div>
+          <div class="article_title_text">Vortex</div>
+          <div class="right_block"></div>
+        </a>
+        <div class="subtitle">Asimov Crew</div>
+        <div style="height: 10px"></div>
+        <iframe
+          class="profile_iframe"
+          src="./crew/profiles/Vortex.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <!--block parse-->
+      <div style="height: 10px"></div>
+      <div class="article_block">
+        <a class="article_title">
+          <div class="article_decal"></div>
+          <div style="width: 20px"></div>
+          <div class="article_title_text">Architect</div>
+          <div class="right_block"></div>
+        </a>
+        <div class="subtitle">Asimov Crew</div>
+        <div style="height: 10px"></div>
+        <iframe
+          class="profile_iframe"
+          src="./crew/profiles/Architect.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <!--block parse-->
+      <div style="height: 10px"></div>
+      <div class="article_block">
+        <a class="article_title">
+          <div class="article_decal"></div>
+          <div style="width: 20px"></div>
+          <div class="article_title_text">Forge</div>
+          <div class="right_block"></div>
+        </a>
+        <div class="subtitle">Asimov Crew</div>
+        <div style="height: 10px"></div>
+        <iframe
+          class="profile_iframe"
+          src="./crew/profiles/Forge.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <!--block end-->
       <div style="height: 10px"></div>
     </div>
   </body>
   <script>
     const article_buttons = document.getElementsByClassName("article_block");
+    Array.prototype.forEach.call(article_buttons, (element) => {
+      element.addEventListener("click", function () {
+        if (
+          element.children[element.children.length - 1].style.display == "block"
+        ) {
+          element.children[element.children.length - 1].style.display = "none";
+        } else {
+          element.children[element.children.length - 1].style.display = "block";
+        }
+      });
+    });
   </script>
 </html>
