@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Profile Forge</title>
+    <style>
+      :root {
+        --base-bg-color: #001012;
+        --main-text-color: #e0ffff;
+        --second-text-color: #1da25b;
+        --summery-text-color: #f0f6c2;
+        --button_color: #007790;
+        --graphic_2: #006045;
+        --graphic_3: #02a89a;
+        --scroll_bar_color: #002e32;
+        --graphic_3_tluc: #02a89a10;
+      }
+      html::-webkit-scrollbar {
+        width: 8px;
+      }
+      html::-webkit-scrollbar-track {
+        background: var(--graphic_3);
+      }
+      html::-webkit-scrollbar-thumb {
+        background-color: var(--scroll_bar_color);
+        border-radius: 4px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .static_background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -2;
+        display: block;
+      }
+      .static_background_top {
+        display: block;
+        position: fixed;
+        top: 0%;
+        height: 70%;
+        width: 100%;
+        background-color: var(--base-bg-color);
+      }
+      .static_background_bottom {
+        position: fixed;
+        top: 70%;
+        display: block;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(var(--base-bg-color), #002020);
+      }
+      .dots {
+        background-size: 8vh 8vh;
+        background-image: radial-gradient(#205050 0.3vh, transparent 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+      h1 {
+        color: #0077b5;
+        margin-bottom: 10px;
+      }
+      .center_block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .top_bar {
+        width: auto;
+        background: linear-gradient(var(--graphic_2), #002020);
+        height: 30px;
+        border-bottom-style: double;
+        border-width: 10px;
+        border-color: var(--graphic_2);
+        display: flex;
+      }
+      .profile-details {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .education_button {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--main-text-color);
+        background-color: var(--button_color);
+        padding: 4%;
+        border: var(--graphic_2);
+        border-style: double;
+        border-width: 5px;
+        border-radius: 30vh;
+        text-align: center;
+      }
+      .connections_button {
+        width: fill;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--button_color);
+        background-color: var(--main-text-color);
+        padding: 4%;
+        border: var(--graphic_2);
+        border-style: double;
+        border-width: 5px;
+        border-radius: 30vh;
+        text-align: center;
+      }
+      .news_button {
+        width: fill;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--button_color);
+        background-color: var(--main-text-color);
+        padding: 4%;
+        border: var(--graphic_2);
+        border-style: double;
+        border-width: 5px;
+        border-radius: 30vh;
+        text-align: center;
+      }
+      .profile_buttons {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 150px;
+        justify-content: flex-end;
+        padding-left: 100px;
+      }
+      .profile-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--main-text-color);
+      }
+
+      .profile-rank {
+        color: var(--second-text-color);
+      }
+      .profile-summary {
+        color: var(--summery-text-color);
+        margin-bottom: 20px;
+      }
+      .profile-section {
+        margin-bottom: 20px;
+      }
+      .profile-section h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--second-text-color);
+        margin-bottom: 10px;
+      }
+      .bio_paragraph {
+        color: var(--main-text-color);
+        width: 500px;
+        margin: 0;
+      }
+      .personality {
+        display: block;
+        width: 20%;
+        height: 310px;
+        border: double white;
+
+        text-align: center;
+        border-radius: 20px;
+        color: white;
+      }
+    </style>
+  </head>
+  <div class="static_background">
+    <div class="static_background_top"></div>
+    <div class="static_background_bottom"></div>
+  </div>
+  <div class="dots"></div>
+  <body>
+    <div class="center_block">
+      <h1>Juliette Cabin Crew</h1>
+      <div class="profile-details">
+        <img
+          class="profile-img"
+          src="../profile pictures/Alex Reynolds codename Forge.jpg"
+          alt="pfp"
+        />
+        <div>
+          <div class="profile-name">Forge</div>
+          <div class="profile-rank">Alex Reynolds</div>
+        </div>
+      </div>
+      <div
+        style="
+          width: auto;
+          height: 2px;
+          background-color: var(--main-text-color);
+          border-radius: 50vh;
+        "
+      ></div>
+      <div style="height: 3px"></div>
+      <div
+        style="
+          width: auto;
+          height: 2px;
+          background-color: var(--main-text-color);
+          border-radius: 50vh;
+        "
+      ></div>
+
+      <div class="profile-summary">
+        <h2>Role</h2>
+        <div class="bio_paragraph">Tactician</div>
+        <h2>Bio</h2>
+        <div class="bio_paragraph">
+          Sergeant Alex Reynolds; codename Forge
+          <br /><br />
+          Forge, a specimen of physical conditioning, possesses a wealth of
+          knowledge in armaments and a commendable proficiency in piloting. His
+          reputation as an arms smuggler is infamous, having orchestrated the
+          clandestine transport of weaponry across interstellar boundaries,
+          eluding the grasp of security drones for years and accruing a
+          notorious record of damages in the millions. His capture was not a
+          result of tactical failure but a conscious choice to preserve life
+          over liberty.
+          <br /><br />
+          Confined to his ancestral home in the verdant outskirts of what was
+          once Havana, his father’s wealth shielded him from incarceration,
+          liquidating assets to cover the astronomical fine. Yet, the gilded
+          cage of house arrest could not quell his indomitable spirit. Seizing
+          the opportunity, Forge secured a berth on the Asimov, yearning for the
+          expanse of the cosmos over the confines of terrestrial boundaries.
+          <br /><br />
+          His temperament, akin to the unpredictable nature of plasma
+          propulsion, is both his strength and his vulnerability. With newfound
+          autonomy aboard the Asimov, he dedicates his time to the art of drone
+          navigation, offering his services to the Icarus Consortium and other
+          entities in need of a pilot with his unique skill set. However, a
+          digital specter shadows his every maneuver — a security subroutine
+          embedded within his credentials ensures that the Icarus Ethics
+          Committee remains apprised of his actions, a constant reminder of his
+          checkered past.
+        </div>
+        <h2>Description</h2>
+        <div class="bio_paragraph">
+          Height: 1.94m<br />
+          Hair: Rust<br />
+          Eye color: Brown<br />
+          Age: 29<br />
+          Weight: 117Kg<br />
+          Recognizable characteristics:<br />
+          Full upper body tattooed with imagery of flames.
+          <br />
+        </div>
+        <h2>Personality</h2>
+        <div style="display: flex; justify-content: space-evenly">
+          <div class="personality">
+            D
+            <div>58%</div>
+          </div>
+          <div class="personality">
+            I
+            <div>55%</div>
+          </div>
+          <div class="personality">
+            S
+            <div>29%</div>
+          </div>
+          <div class="personality">
+            C
+            <div>41%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const blocks_p = document.getElementsByClassName("personality");
+    window.addEventListener("load", function () {
+      update_bars();
+    });
+    function update_bars() {
+      Array.prototype.forEach.call(blocks_p, (e) => {
+        e.style.background = "linear-gradient(var(--graphic_3_tluc) ".concat(
+          100 - parseFloat(e.children[0].innerHTML),
+          "%, var(--graphic_3) ",
+          108 - parseFloat(e.children[0].innerHTML),
+          "%)"
+        );
+      });
+    }
+  </script>
+</html>
