@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hardware Reference</title>
+    <style>
+      :root {
+        --base-bg-color: #001012;
+        --main-text-color: #e0ffff;
+        --second-text-color: #1da25b;
+        --summery-text-color: #f0f6c2;
+        --button_color: #007790;
+        --graphic_2: #006045;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .static_background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -2;
+        display: block;
+      }
+      .static_background_top {
+        display: block;
+        position: fixed;
+        top: 0%;
+        height: 70%;
+        width: 100%;
+        background-color: var(--base-bg-color);
+      }
+      .static_background_bottom {
+        position: fixed;
+        top: 70%;
+        display: block;
+        height: 30%;
+        width: 100%;
+        background: linear-gradient(var(--base-bg-color), #002020);
+      }
+      .dots {
+        background-size: 8vh 8vh;
+        background-image: radial-gradient(#205050 0.3vh, transparent 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-height: 100%;
+        min-width: 100%;
+        z-index: -1;
+      }
+      h1 {
+        color: #0077b5;
+        margin-bottom: 10px;
+      }
+      .center_block {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .top_bar {
+        width: auto;
+        background: linear-gradient(var(--graphic_2), #002020);
+        height: 30px;
+        border-bottom-style: double;
+        border-width: 10px;
+        border-color: var(--graphic_2);
+        display: flex;
+      }
+      .profile-details {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .education_button {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--main-text-color);
+        background-color: var(--button_color);
+        padding: 4%;
+        border: var(--graphic_2);
+        border-style: double;
+        border-width: 5px;
+        border-radius: 30vh;
+        text-align: center;
+      }
+      .connections_button {
+        width: fill;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--button_color);
+        background-color: var(--main-text-color);
+        padding: 4%;
+        border: var(--graphic_2);
+        border-style: double;
+        border-width: 5px;
+        border-radius: 30vh;
+        text-align: center;
+      }
+      .news_button {
+        width: fill;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--button_color);
+        background-color: var(--main-text-color);
+        padding: 4%;
+        border: var(--graphic_2);
+        border-style: double;
+        border-width: 5px;
+        border-radius: 30vh;
+        text-align: center;
+      }
+      .profile_buttons {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        width: 150px;
+        justify-content: flex-end;
+        padding-left: 100px;
+      }
+      .profile-name {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--main-text-color);
+      }
+
+      .profile-rank {
+        color: var(--second-text-color);
+      }
+
+      .profile-summary {
+        color: var(--summery-text-color);
+        margin-bottom: 20px;
+      }
+      .profile-section {
+        margin-bottom: 20px;
+      }
+      .profile-section h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--second-text-color);
+        margin-bottom: 10px;
+      }
+      .hardware_button {
+        color: var(--main-text-color);
+        width: 500px;
+        border: 1px solid var(--button_color);
+        border-radius: 10px;
+        text-align: center;
+        margin: 6px 0px;
+      }
+      .crafting_page {
+        border-radius: 10px;
+        border: 1px double white;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 10px;
+      }
+
+      .inventory_item {
+        border: 4px double var(--button_color);
+        margin: 6px 0px;
+        display: flex;
+        width: 60vw;
+      }
+      .item_stats {
+        width: 50%;
+        color: var(--main-text-color);
+        display: flex;
+        flex-direction: column;
+      }
+      .item_description {
+        display: flex;
+        flex-direction: column;
+        color: var(--main-text-color);
+        width: 50%;
+        margin-bottom: auto;
+      }
+      .item_descriptor {
+        color: var(--second-text-color);
+      }
+      .item_image {
+        max-height: 15vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <div class="static_background">
+    <div class="static_background_top"></div>
+    <div class="static_background_bottom"></div>
+  </div>
+  <div class="dots"></div>
+  <body>
+    <div class="top_bar">
+      <iframe style="width: 100%" src="../navbar.html" frameborder="0"></iframe>
+    </div>
+    <div class="center_block">
+      <div class="profile-name">Hardware Reference:</div>
+      <div class="inventory_item">
+        <div class="item_stats">
+          <div class="item_descriptor">Name</div>
+          Repair Drone Remote Pilot Unit
+          <div class="item_descriptor">Class</div>
+          D-Class
+          <div class="item_descriptor">Size</div>
+          <div>2.1 m<sup>3</sup></div>
+          <div class="item_descriptor">Weight</div>
+          280 kg
+          <div class="item_descriptor">Value</div>
+          12,000 ʉ
+          <div class="item_descriptor">Skill Modifiers</div>
+          {<br />
+          accuracy: -6, <br />communication: -4, <br />consitution: inherit,<br />
+          dexterity: -5, <br />fighting: -10,<br />intelligence: -1, <br />
+          perception: -4,<br />strenght: +3, <br />willpower: -1<br />
+          }
+        </div>
+        <div class="item_description">
+          <img class="item_image" src="./images/RepairDrone.png" alt="" />
+          <div></div>
+        </div>
+      </div>
+      <div class="inventory_item">
+        <div class="item_stats">
+          <div class="item_descriptor">Name</div>
+          Ajax Remote Pilot Unit
+          <div class="item_descriptor">Class</div>
+          H-Class
+          <div class="item_descriptor">Size</div>
+          <div>0.105 m<sup>3</sup></div>
+          <div class="item_descriptor">Weight</div>
+          197 kg
+          <div class="item_descriptor">Value</div>
+          18,400 ʉ
+          <div class="item_descriptor">Skill Modifiers</div>
+          {<br />
+          accuracy: -4, <br />communication: -4, <br />consitution: +1,<br />
+          dexterity: inherit, <br />fighting: inherit,<br />intelligence:
+          inherit, <br />
+          perception: -1,<br />strenght: +3, <br />willpower: +1<br />
+          }
+        </div>
+        <div class="item_description">
+          <img class="item_image" src="./images/ajax.png" alt="" />
+          <div></div>
+        </div>
+      </div>
+
+      <div class="inventory_item">
+        <div class="item_stats">
+          <div class="item_descriptor">Name</div>
+          Hercules Remote Pilot Unit
+          <div class="item_descriptor">Class</div>
+          H-Class
+          <div class="item_descriptor">Size</div>
+          <div>0.45 m<sup>3</sup></div>
+          <div class="item_descriptor">Weight</div>
+          388 kg
+          <div class="item_descriptor">Value</div>
+          24,400 ʉ
+          <div class="item_descriptor">Skill Modifiers</div>
+          {<br />
+          accuracy: -5, <br />communication: -7, <br />consitution: +4,<br />
+          dexterity: -1, <br />fighting: +3,<br />intelligence: inherit,
+          <br />
+          perception: -2,<br />strenght: +6, <br />willpower: +3<br />
+          }
+        </div>
+        <div class="item_description">
+          <img class="item_image" src="./images/Hercules.png" alt="" />
+          <div></div>
+        </div>
+      </div>
+      <div class="inventory_item">
+        <div class="item_stats">
+          <div class="item_descriptor">Name</div>
+          Aries Remote Pilot Unit
+          <div class="item_descriptor">Class</div>
+          H-Class
+          <div class="item_descriptor">Size</div>
+          <div>0.110 m<sup>3</sup></div>
+          <div class="item_descriptor">Weight</div>
+          196 kg
+          <div class="item_descriptor">Value</div>
+          180,500 ʉ
+          <div class="item_descriptor">Skill Modifiers</div>
+          {<br />
+          accuracy: +3, <br />communication: inherit, <br />consitution:
+          inherit,<br />
+          dexterity: inherit, <br />fighting: +3,<br />intelligence: +3,
+          <br />
+          perception: +2,<br />strenght: +1, <br />willpower: +4<br />
+          }
+        </div>
+        <div class="item_description">
+          <img class="item_image" src="./images/Aries.png" alt="" />
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
